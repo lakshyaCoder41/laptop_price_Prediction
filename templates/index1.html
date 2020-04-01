@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<!--
+	Monochromed by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Laptop Price Prediction</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+
+
+			<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}"/>
+			<link rel="stylesheet" href="{{ url_for('static', filename='css/skel-noscript.css')}}" />
+			<link rel="stylesheet" href="{{ url_for('static', filename='css/style-1000px.css')}}" />
+			<link rel="stylesheet" href="{{ url_for('static', filename='css/style-desktop.css')}}" />
+			<link rel="stylesheet" href="{{ url_for('static', filename='css/style-mobile.css')}}" />
+			<link rel="stylesheet" href="{{ url_for('static', filename='css/slides.min.css')}}" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	</head>
+	<body class="homepage" background="images/a1.jpg">
+
+	<!-- Header -->
+		<div id="header">
+			<div class="container">
+
+				<!-- Logo -->
+					<div id="logo">
+						<h1 style="color:white;font-family:impact;font-size:140px"> Estimation</h1>
+						<span style="color:white;font-style:italic">Get the Estimated Price of Your Desired Laptop</span>
+					</div>
+    <!-- Nav -->
+
+			</div>
+		</div>
+	<!-- Header -->
+
+	<!-- Main -->
+
+		<div id="main" background-image=url({{url_for('static',filename='css/images/a1.jpg')}})>
+			<div class="container">
+			<form class="form" method= 'GET' action="{{ url_for('test') }}">
+				<header>
+					<h2 style="color:white;font-family:Avantgarde,TeX Gyre Adventor, URW Gothic L, sans-serif;font-style:oblique">Select Your Requirements:</h2>
+				</header>
+				<div class="row">
+					<div class="3u">
+						<section>
+
+
+
+							<a href="#" class="image full"><img src="{{url_for('static',filename='images/pics01.jpg')}}" alt="" /></a>
+
+
+
+<!--Processors-->
+
+<select class="form-control selectpicker" name="processor">
+	<option disabled selected>Select Processor</option>
+  <optgroup label="Intel Processors">
+    <option value="117">Intel core i7</option>
+    <option value="115">Intel core i5</option>
+    <option value="113">Intel core i3</option>
+    <option value="112">Intel quad core</option>
+    <option value="110">Intel dual core</option>
+  </optgroup>
+  <optgroup label="AMD Processors">
+    <option value="213">AMD A-Series</option>
+    <option value="215">AMD E-Series</option>
+  </optgroup>
+</select>
+
+<!--Processors-->
+
+
+
+						</section>
+					</div>
+		.
+					<div class="3u">
+						<section>
+							<a href="#" class="image full"><img src="{{url_for('static',filename='images/pics11.png')}}" height="210px" alt="" /></a>
+							<select class="form-control selectpicker" name="os">
+                                <option disabled selected>Select Operating System</option>
+
+                             <optgroup label="Windows">
+                                <option value="110">Windows 10</option>
+                                   <option value="18">Windows 8</option>
+                                   <option value="17">Windows 7</option>
+                             </optgroup>
+                             <optgroup label="Mac">
+                                <option value="21">Mac Os</option>
+                             </optgroup>
+                             <optgroup label="Others">
+                                <option value="30">Others</option>
+                             </optgroup>
+
+                             </select>
+
+						</section>
+					</div>
+					<div class="3u">
+						<section>
+							<a href="#" class="image full"><img src="{{url_for('static',filename='images/pics12.jpg')}}" height="210px" alt="" /></a>
+
+                            <select class="form-control selectpicker" name="gpu">
+                                <option disabled selected>Select GPU Type</option>
+
+                             <optgroup label="Intel">
+                                <option value="1310">Iris 640 </option>
+                                   <option value="1468">HD 6000</option>
+                                   <option value="1377">HD 620</option>
+                                 <option value="1304">HD 650</option>
+                                 <option value="1453">HD 520</option>
+                                 <option value="1489">HD 615</option>
+                                 <option value="1637">HD 400</option>
+                                 <option value="1615">HD 500</option>
+                                 <option value="1530">HD 515</option>
+                                 <option value="1564">HD 505</option>
+                                 <option value="1635">HD 405</option>
+                                 <option value="1534">HD 510</option>
+                                 <option value="1370">HD 630</option>
+                             </optgroup>
+                             <optgroup label="AMD">
+                                <option value="2307">RADION 530 </option>
+                                 <option value="2478">RADION R5 </option>
+                                 <option value="2453">RADION 520 </option>
+                                 <option value="2289">RADION R7 </option>
+                                 <option value="2584">RADION R2 </option>
+                                 <option value="2580">RADION R4 </option>
+                                 <option value="2311">RADION RX </option>
+                                 <option value="2312">RADION FIREPRO</option>
+                             </optgroup>
+                             <optgroup label="Nvidia">
+                                <option value="3123">GTX 1050</option>
+                                <option value="365">GTX 1060</option>
+                                <option value="3277">940 MX</option>
+                                <option value="339">GTX 1070</option>
+                                <option value="3120">GTX 1050 Ti</option>
+                                <option value="3283"> 930 MX</option>
+                                <option value="3311">920 MX</option>
+                                <option value="3177">MX 150</option>
+                                <option value="3162">GTX 960 M</option>
+                                <option value="354">GTX 980 M</option>
+                                <option value="3769">QUADRO  M1200</option>
+                                 <option value="3193">GTX 950 M</option>
+                                <option value="3370">GTX 920 M</option>
+                                <option value="3390">GTX 930 M</option>
+                                <option value="328">GTX 1080</option>
+                                <option value="3276">MX 130</option>
+                                <option value="3141">GTX 965 M</option>
+                             </optgroup>
+
+                             </select>
+
+
+						</section>
+					</div>
+
+<!--Memory Type-->
+					<div class="3u">
+						<section>
+							<a href="#" class="image full"><img src="{{url_for('static',filename='images/RAMM.jpg')}}" alt="" /></a>
+							<p><select class="form-control selectpicker" name="memtype">
+	<option disabled selected>Select Memory Type</option>
+    <option value="3">HDD</option>
+    <option value="4">SSD</option>
+    <option value="34">HDD+SSD</option>
+    <option value="2">Hybrid</option>
+    <option value="1">Flash Storage</option>
+  </optgroup>
+</select></p>
+						</section>
+					</div>
+				</div>
+				<br><br>
+<!--Memory Type-->
+
+			<!--form class = "form"-->
+					<div class="3u">
+					<div class="form-group">
+						<section>
+						<table class = "table table-bordered" style="width:1200px">
+							<tr>
+							<td><input type="text" name="weight" class="form-control" id="wt" placeholder="Weight : <1.5 - 2.5> kg"/></td>
+                            <td><input type="text" name="ram" class="form-control" id="ram" placeholder="RAM : GBs"></td>
+                            <td><input type="text" name="size1" class="form-control" id="mem" placeholder="Memory Size(1) : GBs"></td>
+                            <td><input type="text" name="size2" class="form-control" id="mem2" placeholder="Memory Size(2) : GBs"></td>
+                            <td><input type="text" name="dimension" class="form-control" id="dimen" class="text feild" placeholder="Dimensions : Inches"></td>
+							</tr>
+						</table>
+						</section>
+					</div>
+					</div>
+
+
+
+						<section style="text-align:center;margin-top:50px">
+						<input class="button btn-primary" type="Submit" name="pred" value="PREDICT" style="max-width:300px;margin:auto;width:500px;font-family:awesome;font-size:20px" />
+						</section>
+            <p><h1 value="{{ price }}" style="color:white;text-align:center;font-family:awesome"> Price: ₹ {{ price }}</h1></p>
+						<p ><h3 style="color:white;text-align:center;font-family:awesome">{% for i in spec%} {% if spec[i]!=0 %} {{i }} : {{ spec[i] }} <br/>{%endif%}{% endfor %}</h3></p>
+
+
+
+					<div class="3u">
+						<section>
+						<output name="price"></output>
+						</section>
+					</form>
+					</div>
+						</div>
+
+			</div>
+	<!-- Main -->
+
+
+
+
+	</body>
+</html>
